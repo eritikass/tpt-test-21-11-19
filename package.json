@@ -1,7 +1,11 @@
 {
   "name": "test-21-11-19",
   "scripts": {
-    "test": "nightwatch --env local"
+    "test": "nightwatch --env local",
+    "neti": "npm run test -- test/e2e/neti.js",
+    "nightwatch": "npm run test -- test/e2e/nightwatch.js",
+    "lint": "eslint .",
+    "epl": "npm run test -- test/e2e/epl.js"
   },
   "dependencies": {
     "nightwatch": "^1.0.5",
@@ -9,6 +13,8 @@
   },
   "devDependencies": {
     "chromedriver": "^78.0.1",
+    "eslint": "^6.6.0",
+    "husky": "^3.1.0",
     "selenium-server": "^3.8.1"
   }
 }
