@@ -45,6 +45,6 @@
    - 2 spaces for indent
    - use `'` instead of `"`
    - all lines end with semicolon
-   - fix or ignore all errors
+   - fix all errors
    - command to run linter: `npm run lint`
    - add git hook to run linter locally each time you commit new code (you can use [husky](https://www.npmjs.com/package/husky) or any tool you like)
