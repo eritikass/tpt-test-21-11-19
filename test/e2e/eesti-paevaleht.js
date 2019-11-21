@@ -11,11 +11,10 @@ module.exports = {
         .assert.containsText('/html/body/div[2]/div/div/div[3]/div/div[2]/div/div/section/div/div[1]/ul/li[1]/h3/a', 'ARVAMUSVEEB')
         .assert.containsText('//*[@class="editors-choice__heading"]', 'TOIMETAJA VALIK')
         .assert.elementPresent('//*[@class="editors-choice"]//*[@class="col col-24" and position() > 2]')
-        .useXpath()
         .click('//a[text()="Faktikontroll"]')
-        .useCss()
         .pause(2500)
         .assert.title('Faktikontroll - Eesti Päevaleht')
+        .useCss()
         .assert.containsText("body","FAKTIKONTROLL")
         .end();
     }
