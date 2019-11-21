@@ -20,5 +20,5 @@ module.exports = {
       .pause(5000)
       .saveScreenshot(conf.imgpath('kass.png'))
       .end();
-    }
-  };
+  }
+};

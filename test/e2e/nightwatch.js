@@ -9,16 +9,16 @@ module.exports = {
       .waitForElementVisible('body')
 
       .execute(function() {
-		  document.querySelector('a[href=\'/api\']').click()
+		  document.querySelector('a[href=\'/api\']').click();
 	  });
 
-      browser.waitForElementVisible('body')
+    browser.waitForElementVisible('body')
       .execute(function() {
-		  document.querySelector('a[href=\'#assert-urlEquals\']').click()
+		  document.querySelector('a[href=\'#assert-urlEquals\']').click();
 	  });
 
-      browser.pause(2000)
+    browser.pause(2000)
       .saveScreenshot(conf.imgpath('nightwatch.png'))
       .end();
-    }
-  };
+  }
+};

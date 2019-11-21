@@ -20,5 +20,5 @@ module.exports = {
       .assert.title('Globaalsed logistikateenused – Rahvusvaheline kaubavedu | DHL Home | Eesti')
       .saveScreenshot(conf.imgpath('dhl.png'))
       .end();
-    }
-  };
+  }
+};
