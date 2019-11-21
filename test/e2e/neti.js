@@ -1,3 +1,5 @@
+var conf = require('../../nightwatch.conf.js');
+
 module.exports =
 {
   'neti test': function(browser)
@@ -17,12 +19,12 @@ module.exports =
       .useCss()
       .assert.containsText('body', 'Kullerteenused')
       .assert.title('NETI: /ÄRI/Postiteenused')
-      .saveScreenshot('./screenshot/postiteenused.png')
+      .saveScreenshot(conf.imgpath('pealeht.png'))
       .useXpath()
       .click('/html/body/div[3]/div[8]/div[1]/ul[2]/li[7]/h3/a')
       .getTitle()
       .assert.title('Globaalsed logistikateenused – Rahvusvaheline kaubavedu | DHL Home | Eesti')
-      .saveScreenshot('./screenshot/dhlEST.png')
+      .saveScreenshot(conf.imgpath('DHL.png'))
       .assert.urlContains('www.logistics.dhl')
       .pause(1000)
       .end();

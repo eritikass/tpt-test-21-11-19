@@ -7,7 +7,7 @@ module.exports =
       .waitForElementVisible('body')
 
       .assert.title('Eesti Päevaleht')
-      .saveScreenshot('./screenshot/paevaleht.png')
+      .saveScreenshot(conf.imgpath('paevaleht.png'))
     //   .assert.elementPresent('.row')
     //   .assert.elementPresent('.col.col-8')
     //   .useXpath()
