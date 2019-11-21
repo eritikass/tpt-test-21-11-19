@@ -16,8 +16,8 @@
   },
      "husky": {
       "hooks": {
-        "pre-commit": "npm lint",
-        "pre-push": "npm lint"
+        "pre-commit": "npm eslint .",
+        "pre-push": "npm eslint ."
         
       }
     }
