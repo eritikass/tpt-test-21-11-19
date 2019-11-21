@@ -1,7 +1,8 @@
 {
   "name": "test-21-11-19",
   "scripts": {
-    "test": "nightwatch --env local"
+    "test": "nightwatch --env local",
+    "lint": "eslint ."
   },
   "dependencies": {
     "nightwatch": "^1.0.5",
@@ -9,6 +10,16 @@
   },
   "devDependencies": {
     "chromedriver": "^78.0.1",
+    "eslint": "^6.6.0",
+    "husky": "^3.1.0",
     "selenium-server": "^3.8.1"
-  }
+  },
+     "husky": {
+      "hooks": {
+        "pre-commit": "npm eslint .",
+        "pre-push": "npm eslint ."
+        
+      }
+    }
+  
 }
