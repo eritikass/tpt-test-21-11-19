@@ -1,7 +1,7 @@
-const path = require('path');
+const path = require("path");
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
-const SCREENSHOT_PATH = path.join(__dirname, 'screenshot')
+const SCREENSHOT_PATH = path.join(__dirname, "screenshot");
 
 const config = { // we use a nightwatch.conf.js file so we can include comments and helper functions
   "src_folders": [
@@ -113,7 +113,7 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
       }
     }
   }
-}
+};
 module.exports = config;
 
 
