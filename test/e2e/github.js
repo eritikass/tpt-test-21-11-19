@@ -8,5 +8,5 @@ module.exports = {
       .assert.containsText('body', 'dwyl.com')
       .saveScreenshot(conf.imgpath('dwyl.png'))
       .end();
-    }
-  };
+  }
+};
