@@ -1,7 +1,7 @@
 var conf = require("../../nightwatch.conf.js");
 
 module.exports = {
-  "Testid": function (browser) {
+  "Delfi": function (browser) {
     browser
       .url("https://epl.delfi.ee/")
 
