@@ -15,7 +15,10 @@ module.exports = {
       .pause(2000)
       .setValue('//input[@class="header-search__input"]', 'kass')
       .pause(2000)
-      .click('')
+      .click('//* [@class="header-search__button"]')
+      .pause(2000)
+      .saveScreenshot(conf.imgpath('Kass.png'))
+      .pause(2000)
       .end();
   }
 };
