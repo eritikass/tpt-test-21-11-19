@@ -5,11 +5,24 @@ module.exports = {
     browser
       .url('https://epl.delfi.ee');
     browser.maximizeWindow()
-      .assert.containsText('body', 'Äri ja Reisimine')
+      .assert.title('Eesti Päevaleht')
       .pause(500)
       .useXpath()
       .saveScreenshot(conf.imgpath('epl.png'))
-      .assert.containsText('//a[@href="/arvamus"]', 'ArvamusVeeb')
+      .assert.containsText('//a[@data-v-d37064b2]', 'ARVAMUSVEEB')
+      .pause(1000)
+      //.assert.containsText('//a[@data-v-d37064b2]', 'Toimetaja valik')
+      //.pause(1000)
+      .click('//a[@href="/faktikontroll"]')
+      .pause(1000)
+      //.assert.containsText('#main > section > div:nth-child(2) > div.col.before-ad > div]', 'FAKTIKONTROLL')
+      .setValue('//input[@class="header-search__input"]', 'kass')
+      .pause(500)
+      .click('//button[@class="header-search__button"]')
+      .pause(1000)
+      .saveScreenshot(conf.imgpath('kass.png'))
+      .pause(1000)
+      .end();
 
 
 
