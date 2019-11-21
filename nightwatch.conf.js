@@ -112,7 +112,13 @@ const config = { // we use a nightwatch.conf.js file so we can include comments 
         "version": "8.4"
       }
     }
-  }
+  
+  
+  
+  
+  
+  },
+  "custom_assertions_path": "./plugins"
 }
 module.exports = config;
 
