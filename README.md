@@ -1,3 +1,10 @@
+## To run tests
+
+Neti.ee test: npm run neti
+Eesti Päevaleht test: npm run paevaleht
+Nightwatch test: npm run nightwatch
+
+
 ## getting started
 
 1. fork git repository
