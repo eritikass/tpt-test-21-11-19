@@ -1,14 +1,25 @@
 {
   "name": "test-21-11-19",
   "scripts": {
-    "test": "nightwatch --env local"
+    "test": "nightwatch --env local",
+    "lint": "eslint .",
+    "neti": "nightwatch  --env local ./test/e2e/neti.js",
+    "paevaleht": "nightwatch --env local ./test/e2e/paevaleht.js",
+    "nightwatch": "nightwatch --env local ./test/e2e/nightwatch.js"
   },
   "dependencies": {
-    "nightwatch": "^1.0.5",
+    "nightwatch": "^1.2.4",
     "selenium-download": "^2.0.7"
   },
   "devDependencies": {
     "chromedriver": "^78.0.1",
-    "selenium-server": "^3.8.1"
+    "eslint": "^6.6.0",
+    "husky": "^3.1.0",
+    "selenium-server": "^3.141.59"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
